@@ -27,3 +27,13 @@ console.log(uniqueArray)
 console.log(flattenArray)
 console.log(chunk)
 
+//Task5: Creating Tests for a Described Module
+const data = require("./dataUtils")
+const formatDate = data.formatDate(new Date(), "YYYY-MM-DD")
+//const formatDate = data.formatDate("MM-DD-YYYY")
+//const formatDate = data.formatDate("DD-MM-YYYY")
+const isWeekend = data.isWeekend(new Date())
+const daysBetween = data.daysBetween(new Date("2024-11-20"), new Date("2024-11-23"))
+console.log(formatDate)
+console.log(isWeekend)
+console.log(daysBetween)
